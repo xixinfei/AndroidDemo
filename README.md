@@ -1,2 +1,2 @@
-# AndroidDemo
-android demo
+# AndroidMixDemo
+android mix demo
