@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/general_dialo_bg"
+                android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="title"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="content"
+        android:textColor="@color/gray_b7"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="63dp"
+        android:background="@color/gray_db"/>
+
+    <RelativeLayout
+        android:id="@+id/dialog_ok2"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="@color/gray_db"/>
+
+        <Button
+            android:id="@+id/btSure"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/gray_de"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_ok1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btok"
+            android:layout_width="80dip"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="OK"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17.3sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

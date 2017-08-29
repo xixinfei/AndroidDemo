@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    -->
+
+    <color name="colorPrimary">#FF552E</color>
+    <color name="colorPrimaryDark">#FF552E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="main_bottom_text_normal">#B7BBBF</color>
+    <color name="main_botton_text_select">#FF552E</color>
+    <color name="main_bottom_bg">#11000000</color>
+    <color name="essence_tab_bg">#12000000</color>
+    <color name="essence_tab_text_color_normal">#ff847d7b</color>
+    <color name="essence_tab_text_color_press">#FF4801</color>
+    <color name="colorActiveMeals">#FFA08A</color>
+    <color name="colorActiveWork">#50E3C2</color>
+
+    <color name="main_color">#5CB85C</color>
+    <color name="gray_ef">#efefef</color>
+    <color name="gray_4e">#4E4E4E</color>
+    <color name="gray_9b">#9B9B9B</color>
+    <color name="topbar_orange">#FF552E</color>
+    <color name="found_text_color">#353535</color>
+    <color name="found_description_color">#aaaaaa</color>
+    <color name="found_divide_color">#d9d9d9</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="gray_b7">#B7BBBF</color>
+    <color name="gray_db">#DBDBDB</color>
+    <color name="gray_de">#DEDEDE</color>
+    <color name="gray_f7">#F7F7F7</color>
+    <color name="gray_f0">#F0F0F0</color>
 </resources>
