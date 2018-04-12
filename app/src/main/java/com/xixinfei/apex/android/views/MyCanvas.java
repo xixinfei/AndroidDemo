@@ -1,4 +1,4 @@
-package com.xixinfei.testapp;
+package com.xixinfei.apex.android.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -2,11 +2,12 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
         mavenCentral()//new add
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,7 +15,14 @@ buildscript {
 }
 
 allprojects {
+    tasks.withType(JavaCompile) {
+        //使在一个单独的守护进程编译
+        options.fork = true
+        //增量编译
+        options.incremental = true
+    }
     repositories {
+        google()
         jcenter()
         mavenCentral()//new add
     }
@@ -25,5 +33,18 @@ task clean(type: Delete) {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.4.1'
+    gradleVersion = project.gradle.gradleVersion
+}
+// Define versions in a single place
+ext {
+    // Support library and architecture components support minSdk 19 and above.
+    minSdkVersion = 19
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '26.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '27.1.0'
+    junitVersion = '4.12'
+    roomVersion = "1.0.0"
 }
